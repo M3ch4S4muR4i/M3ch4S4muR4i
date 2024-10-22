@@ -18,17 +18,20 @@
         <ul>
             <li>
                 <strong>Action RPG Game</strong>: A third-person adventure game, developed with an online course, featuring an open-world environment, patrolling enemies, and basic sword attack mechanics. This project is heavily based in C++ and showcases many fundamental game development processes.
-                    <video width="600" autoplay loop muted>
-                        <source src="Videos/ActionRPG1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <video id="video1" width="600" controls muted>
+                    <source src="Videos/ActionRPG1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </li>
-    <li>
-        <strong>Ironvale</strong>: An ongoing collaborative fantasy action and adventure project in development, where I am currently focused on enemy AI behavior and mechanics in Unreal Engine 5.
-    </li>
-</ul>
+            <li>
+                <strong>Ironvale</strong>: An ongoing collaborative fantasy action and adventure project in development, where I am currently focused on enemy AI behavior and mechanics in Unreal Engine 5.
+                <video id="video2" width="600" controls muted>
+                    <source src="Videos/EarlyIronvale.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </li>
+        </ul>
 
-        
         <h2>Unreal Editor for Fortnite Projects</h2>
         <ul>
             <li>
@@ -47,5 +50,21 @@
     <footer>
         <p>&copy; 2024 Sam Carter</p>
     </footer>
+
+    <!-- JavaScript for sequential autoplay -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var video1 = document.getElementById("video1");
+            var video2 = document.getElementById("video2");
+
+            // Autoplay the first video
+            video1.play();
+
+            // When video1 ends, automatically play video2
+            video1.addEventListener('ended', function() {
+                video2.play();
+            }, false);
+        });
+    </script>
 </body>
 </html>

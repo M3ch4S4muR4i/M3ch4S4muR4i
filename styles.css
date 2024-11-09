@@ -27,6 +27,14 @@ h2 {
     padding-bottom: 10px; /* Space below the heading */
 }
 
+h3 {
+    font-size: 1.3rem;  /* Slightly smaller than your h2 title, but still readable */
+    font-weight: normal; /* Normal weight, to avoid too much emphasis */
+    color: #E0E0E0; /* Keep it the same as regular text color for subtlety */
+    margin-top: 10px; /* Space between project title and code sample */
+    margin-bottom: 5px; /* Less space below */
+}
+
 ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
